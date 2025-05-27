@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "cicdDF"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
