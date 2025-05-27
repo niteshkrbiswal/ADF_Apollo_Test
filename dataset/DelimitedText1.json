@@ -1,0 +1,41 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Customer_Input.txt",
+				"folderPath": "Input",
+				"container": "niteshcontainer1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "customer code",
+				"type": "String"
+			},
+			{
+				"name": "customer name",
+				"type": "String"
+			},
+			{
+				"name": "customer amount",
+				"type": "String"
+			},
+			{
+				"name": "customer date",
+				"type": "String"
+			}
+		]
+	}
+}
